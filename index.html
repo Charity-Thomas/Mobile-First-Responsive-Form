@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Online Registration Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css"> 
+  <link rel="stylesheet" href="css/styles.css">
+ <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+
+  <header>
+    <div class="main-header">
+        <h1>the code review</h1>
+
+        <h2>Sign up for our newsletter</h2>
+
+        <p class="header-p">Get the latest news on how your code is doing, right in your inbox.</p>
+    </div>  
+  </header>
+  <main>
+    <div>    
+        <hr class="main-intro-1">
+        <hr class="main-intro-2"> 
+      <!-- form goes here. -->    
+        <form>
+            <fieldset>
+                <legend class="contact-info">Contact Information</legend>
+             <div class="form-box">  
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="user-name" placeholder="Required"> 
+             </div>   
+             <div class="form-box">   
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="user-email" placeholder="Required">  
+            </div>
+            <div class="form-box">      
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="user-phone" placeholder="(123) 456-7891">
+            </div>     
+            <div class="form-box">                  
+                <label for="address1">Street Address</label>
+                <input type="text" id="address1" name="user-address1">
+            </div>    
+            <div class="form-box">      
+                <label for="address2">City</label>
+                <input type="text" id="address2" name="user-address2">
+            </div> 
+            <div class="form-box">   
+                <label for="address3">State</label>
+                <select class="select" id="address3" name="user-address3"> 
+               <!--Comments:  Added Choose State into Select Option Tag.  Reference - YouTuber: DCode https://www.youtube.com/watch?v=8cExRlT--Zc&t=337s-->   
+                        <option value="" disabled selected>Choose State</option>        
+                    <optgroup label="Northeast"></optgroup>    
+                        <option value="Maine">Maine</option>
+                        <option value="New-Hampshire">New Hampshire</option>
+                        <option value="Vermont">Vermont</option>
+                        <option value="Massachussets">Massachussets</option>
+                        <option value="Connecticut">Connecticut</option>
+                        <option value="Rhode-Island">Rhode Island</option>
+                        <option value="New-York">New York</option>
+                        <option value="New-Jersey">New Jersey</option>
+                        <option value="Pennsylvania">Pennsylvania</option>
+                        <option value="Delaware">Delaware</option>
+                        <option value="Maryland">Maryland</option>
+                    <optgroup label="Southeast"></optgroup>
+                        <option value="Virginia">Virginia</option>
+                        <option value="North-Carolina">North Carolina</option>
+                        <option value="South-Carolina">South Carolina</option>
+                        <option value="Georgia">Georgia</option>
+                        <option value="Florida">Florida</option>
+                        <option value="Kentucky">Kentucky</option>
+                        <option value="West-Virginia">West Virginia</option>
+                        <option value="Tennessee">Tennessee</option>
+                        <option value="Alabama">Alabama</option>
+                        <option value="Mississippi">Mississippi</option>
+                        <option value="Arkansas">Arkansas</option>
+                        <option value="Louisiana">Louisiana</option>
+                    <optgroup label="Midwest"></optgroup>
+                        <option value="Michigan">Michigan</option>
+                        <option value="Ohio">Ohio</option>
+                        <option value="Indiana">Indiana</option>
+                        <option value="Illinois">Illinois</option>
+                        <option value="Wisconsin">Wisconsin</option>
+                        <option value="Minnesota">Minnesota</option>
+                        <option value="Iowa">Iowa</option>
+                        <option value="Missouri">Missouri</option>
+                        <option value="North-Dakota">North Dakota</option>
+                        <option value="South-Dakota">South Dakota</option>
+                        <option value="Kansas">Kansas</option>
+                        <option value="Nebraska">Nebraska</option>
+                        <optgroup label="Southwest"></optgroup>
+                        <option value="Oklahoma">Oklahoma</option>    
+                        <option value="Texas">Texas</option>    
+                        <option value="New-Mexico">New Mexico</option>    
+                        <option value="Arizona">Arizona</option>    
+                    <optgroup label="West"></optgroup>
+                        <option value="Montana">Montana</option>
+                        <option value="Wyoming">Wyoming</option>
+                        <option value="Colorado">Colorado</option>
+                        <option value="Utah">Utah</option>
+                        <option value="Nevada">Nevada</option>
+                        <option value="Idaho">Idaho</option>
+                        <option value="Washington">Washington</option>
+                        <option value="Oregon">Oregon</option>
+                        <option value="California">California</option>
+                        <option value="Alaska">Alaska</option>
+                        <option value="Hawaii">Hawaii</option>
+                </select> 
+              </div>  
+              <div class="form-zip">  
+                <label for="zip">Zip Code</label>
+                <input type="text" id="zip" name="user-zip" placeholder="12345"> 
+              </div> 
+                <hr class="main-newsletter"><br>
+               
+             </fieldset>  
+             <fieldset class="newsletter-fieldset">
+                  <legend class="newsletter-label">Newsletter</legend>    
+                      <p>Select the newsletters you would like to receive.</p>
+                      <input type="checkbox" id="html-news" value="newsletter-html" name="user-html">
+                      <label class="newsletter-item" for="html-news">HTML News</label><br>
+                      <input type="checkbox" id="css-news" value="newsletter-css" name="user-css">
+                      <label class="newsletter-item" for="css-news">CSS News</label><br>
+                      <input type="checkbox" id="javascript-news" value="newsletter-javascript" name="user-javascript">
+                      <label class="newsletter-item" for="javascript-news">Javascript News</label><br>
+                      
+                      <p>Newsletter Format</p>
+
+                      <input type="radio" id="html" value="format-html" name="newsletter" checked="checked">
+                      <label class="newsletter-item" for="html">HTML</label><br>
+                      <input type="radio" id="plain-text" value="format-text" name="newsletter">      
+                      <label class="newsletter item" for="plain-text">Plain Text</label><br><br>      
+                      <label for="topics">Other topics you'd like to hear about</label> 
+                      <textarea rows="5" cols="20" maxlength="200" id="topics" name="user-topics"></textarea><br> 
+                  <button type="submit">Sign Up</button>  
+              </fieldset>         
+          </form> 
+          </div>            
+        </main>
+
+    <footer>
+      <section class="footer">
+        <span>&copy; The Code Review</span>
+      </section>
+    </footer>
+   
+  </body>
+  </html>

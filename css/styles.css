@@ -1,0 +1,257 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1,
+  h2,
+  p,
+  legend,
+  label,
+  span {
+    font-family: "Merriweather", sans-serif;
+  }
+  
+  p,
+  label,
+  span {
+    color: gray;
+    font-size: 1rem;
+  }
+  
+  fieldset {
+    border: none;
+  }
+  
+  legend,
+  h2 {
+    color: rgb(88, 86, 86);
+    font-size: 1.2rem;
+  }
+  
+  .main-header {
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+  }
+  
+  .header-p {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  
+  h1 {
+    text-transform: uppercase;
+    background-color: rgb(88, 86, 86);
+    color: white;
+    padding: 25px;
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+  }
+  
+  .main-intro-1 {
+    border: solid black 3px;
+    margin: 30px 15px 0;
+  }
+  
+  .main-intro-2 {
+    border: solid black 1px;
+    margin: 2px 15px 30px;
+  }
+  
+  .contact-info {
+    margin-bottom: 15px;
+  }
+  input {
+    padding-right: 10px;
+  }
+  input::placeholder {
+    text-align: right;
+    color: rgba(172, 168, 168, 0.87);
+  }
+  input:focus,
+  input:hover {
+      color: blue;
+      font-family: sans-serif;
+      font-size: 1.3rem;
+      font-weight: 500;
+      transition: 1s ease-out;
+  }
+  #name,
+  #email,
+  #phone,
+  #address,
+  #address1,
+  #address2,
+  #address3 {
+    background-color: rgba(221, 221, 221, 0.87);
+    border: none;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+  .select {
+        text-align: left;
+        padding-left: 10px;
+        color: rgba(172, 168, 168, 0.87);
+  }
+  #zip {
+    background-color: rgba(221, 221, 221, 0.87);
+    border: none;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 50%;
+  }
+  
+  legend {
+    font-weight: 600;
+    font-size: 1.3rem;
+  }
+  
+  label {
+    display: block;
+    margin-top: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  optgroup label {
+    text-transform: uppercase;
+  }
+  
+  #topics {
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+  }
+  .main-newsletter {
+    border: solid black 2px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .newsletter-label {
+    font-weight: 700;
+    color: rgb(88, 86, 86);
+    font-size: 1.2rem;
+  }
+  #html-news,
+  #css-news,
+  #javascript-news,
+  #html,
+  #plain-text {
+    margin-right: 1rem;
+  }
+  textarea {
+    background-color: rgba(221, 221, 221, 0.87);
+    border: none;
+    align-self: flex-start;
+    justify-content: flex-start;
+    width: 90%;
+  }
+  textarea:focus,
+  textarea:hover {
+      color: blue;
+      font-family: sans-serif;
+      font-size: 1.3rem;
+      font-weight: 500;
+      transition: 1s ease-out;
+  }
+  button {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 20px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: none;
+    background-color: turquoise;
+    color: white;
+    font-weight: 600;
+    font-family: "Merriweather", sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    flex-basis: 100%;
+    width: 100%;
+  }
+  
+  .footer {
+    text-align: center;
+    color: rgb(126, 115, 115);
+    margin-top: 20px;
+    margin-bottom: 150px;
+  }
+  
+  .newsletter-fieldset label {
+    display: inline-block;
+    margin: 10px 0;
+  }
+  
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Media Queries */
+@media (min-width: 768px) {
+  main {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  legend,
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p,
+  label {
+    font-size: 1.1rem;
+  }
+.form-box {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    white-space: nowrap;
+}
+.form-zip {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+#zip {
+  margin-left: 5.3rem;
+}
+.form-box label {
+    flex-basis: 10rem;
+    flex-grow: 0;
+    flex-shrink: 0;
+    order: -1;
+}
+.form-box input {
+    flex-basis: 1rem;
+    flex-grow: 1;
+    flex-shrink: 1;  
+}
+#html-news,
+#css-news,
+#javascript-news,
+#html,
+#plain-text {
+  margin-right: 1.5rem;
+}
+  .footer {
+    margin-top: 30px;
+  }
+}
